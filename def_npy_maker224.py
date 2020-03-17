@@ -1,8 +1,3 @@
-#このコードがうまく走ることは確認したものの、データ量が24倍程度に爆発するので、
-#このコードで学習データをまとめる方が良いと思われる。
-#具体的には、178MB のデータが 6GB 程度になる。
-
-
 # (120, 120)...resolution
 # (0-10)...cycle
 # (001..051)... case ID
@@ -17,7 +12,7 @@ dir_names = ('pickup10_2018Data2_LAD',  'pickup10_2018_LAD_120',
              'pickup10_2018Data2_N',    'pickup10_2018_N_120',
              'pickup10_2018Data2_RCA',  'pickup10_2018_RCA_120')
 IDnumber = list(range(1, 51, 1))
-four_axes = ('s', '2', '3', '4')
+four_axes = ('s', '2', '3', '4') #short axis, 2 chamber, 3 chamber, 4 chamber
 ten_cycle = list(range(10))
 
 def npy_maker(target_dir): # target_dirにstrを入れてnpyを返す。
