@@ -2,6 +2,7 @@ import os
 from PIL import Image
 import numpy as np
 
+#ファイル数を数えて、かかる時間の目安を出します。
 total = 0
 for folder_name in os.listdir('.'):
     if os.path.isdir(folder_name) == True:
@@ -10,7 +11,7 @@ for folder_name in os.listdir('.'):
         pass
 print("total:", total, "\n")
 
-
+# メインの作業です。
 counter = 0
 for folder_name in os.listdir('.'):
     if os.path.isdir(folder_name) == True:
